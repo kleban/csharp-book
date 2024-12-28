@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://csharp-book.kleban.page/index.html</loc>
-    <lastmod>2024-12-28T13:10:36.968Z</lastmod>
+    <lastmod>2024-12-28T13:48:07.704Z</lastmod>
   </url>
   <url>
     <loc>https://csharp-book.kleban.page/intro.html</loc>
@@ -15,9 +15,5 @@
   <url>
     <loc>https://csharp-book.kleban.page/references.html</loc>
     <lastmod>2024-12-28T13:10:36.968Z</lastmod>
-  </url>
-  <url>
-    <loc>https://csharp-book.kleban.page/Програмування-на-C-.pdf</loc>
-    <lastmod>2024-12-28T13:11:25.834Z</lastmod>
   </url>
 </urlset>
