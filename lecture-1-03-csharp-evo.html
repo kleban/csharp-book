@@ -23,40 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -105,6 +71,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="css/style.css">
@@ -280,10 +249,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Розробники <code>Java</code> успішно вирішили багато проблем, пов’язаних з переносимістю в середовищі Internet, але далеко не всі. Одна з них - міжмовна можливість взаємодії (<code>cross-language interoperability</code>) програмних і апаратних виробів різних постачальників, або багатомовне програмування (mixed-language programming). В разі вирішення цієї проблеми програми, написані на різних мовах, могли б успішно працювати одна з іншою. Така взаємодія необхідна для створення великих систем з розподіленим програмним забезпеченням (ПЗ), а також для програмування компонентів ПЗ, оскільки найціннішим є компонент, який можна використовувати у широкому діапазоні комп’ютерних мов і операційних середовищ.</p>
 <p>Крім того, в <code>Java</code> не досягнута повна інтеграція з платформою <code>Windows</code>. Хоча <code>Java</code>-програми можуть виконуватися в середовищі Windows (за умови встанолення віртуальної машини <code>Java</code>), <code>Java</code> і <code>Windows</code> не є міцно зв’язаними середовищами. А оскільки Windows - це найбільш широко використовувана операційна система в світі, відсутність прямої підтримки <code>Windows</code> - серйозний недолік <code>Java</code>.</p>
 <p>Аби задовольнити ці потреби, <code>Microsoft</code> розробила мову <code>С#</code>, <code>С#</code> була створена в кінці 1990-х років і стала частиною спільної <code>.NET</code>-стратегії <code>Microsoft</code>. Вперше вона побачила світло як альфа-версія в середині 2000 року. Головним архітектором С# був Андерс Хейлсберг (<code>Anders Hejlsberg</code>) - один з провідних фахівців в області мов програмування, що отримав визнання у всьому світі. Досить сказати, що в 1980-х він був автором успішного продукту <code>Turbo Pascal</code>, витончена реалізація якого встановила стандарт для всіх майбутніх компіляторів.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>graph TD;</span>
-<span id="cb1-2"><a href="#cb1-2"></a>  C--&gt;C++;</span>
-<span id="cb1-3"><a href="#cb1-3"></a>  C++--&gt;Java;</span>
-<span id="cb1-4"><a href="#cb1-4"></a>  C++--&gt;C#;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD;
+  C--&gt;C++;
+  C++--&gt;Java;
+  C++--&gt;C#;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <center>
 <i>Рис. 1.1. Розвиток мов програмування C/C++/Java/C#</i>
 </center>
