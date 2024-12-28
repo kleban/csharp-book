@@ -15,3 +15,4 @@ jobs:
           server: ${{ secrets.SHARK_SERVER_FTP_SERVER }}
           username: ${{ secrets.SHARK_FTP_USERNAME }}
           password: ${{ secrets.SHARK_FTP_PASSWORD }}
+          server-dir: courses/csharp/
