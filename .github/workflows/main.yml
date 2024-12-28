@@ -12,7 +12,6 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.SHARK_SERVER_FTP_SERVER }}
+          server: ${{ secrets.SHARK_FTP_SERVER }}
           username: ${{ secrets.SHARK_FTP_USERNAME }}
           password: ${{ secrets.SHARK_FTP_PASSWORD }}
-          server-dir: courses/csharp/
