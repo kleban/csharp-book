@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Юрій Клебан">
-<meta name="keywords" content="C#, .NET, ООП, програмування, розробка програмного забезпечення, visual studio">
+<meta name="keywords" content="Програмування на C#">
+<meta name="description" content=".">
 
-<title>Програмування на C#</title>
+<title>2&nbsp; Програмування на C# – Програмування на C#</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,7 +33,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./lecture-1-01-categories.html" rel="next">
+<link href="./lecture-1-02-history.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./img/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +86,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Програмування на C#</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lecture-1-01-categories.html">Вступ до курсу</a></li><li class="breadcrumb-item"><a href="./lecture-1-01-categories.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Програмування на C#</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -171,7 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Програмування на C#</span></span></a>
   </div>
 </li>
@@ -186,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lecture-1-01-categories.html" class="sidebar-item-text sidebar-link">
+  <a href="./lecture-1-01-categories.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Програмування на C#</span></span></a>
   </div>
 </li>
@@ -208,21 +176,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Зміст</h2>
    
   <ul>
-  <li><a href="#про-посібник" id="toc-про-посібник" class="nav-link active" data-scroll-target="#про-посібник">Про посібник</a></li>
-  <li><a href="#передмова" id="toc-передмова" class="nav-link" data-scroll-target="#передмова"><span class="header-section-number">1</span> Передмова</a></li>
-  <li><a href="#опис-навчальної-дисципліни" id="toc-опис-навчальної-дисципліни" class="nav-link" data-scroll-target="#опис-навчальної-дисципліни"><span class="header-section-number">2</span> Опис навчальної дисципліни</a></li>
-  <li><a href="#мета-та-завдання-навчальної-дисципліни" id="toc-мета-та-завдання-навчальної-дисципліни" class="nav-link" data-scroll-target="#мета-та-завдання-навчальної-дисципліни"><span class="header-section-number">3</span> Мета та завдання навчальної дисципліни</a></li>
-  <li><a href="#дотримання-принципів-доброчесності" id="toc-дотримання-принципів-доброчесності" class="nav-link" data-scroll-target="#дотримання-принципів-доброчесності"><span class="header-section-number">4</span> Дотримання принципів доброчесності</a></li>
+  <li><a href="#загальні-категорії-та-поняття-програмування" id="toc-загальні-категорії-та-поняття-програмування" class="nav-link active" data-scroll-target="#загальні-категорії-та-поняття-програмування"><span class="header-section-number">3</span> Загальні категорії та поняття програмування</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lecture-1-01-categories.html">Вступ до курсу</a></li><li class="breadcrumb-item"><a href="./lecture-1-01-categories.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Програмування на C#</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Програмування на C#</h1>
-<p class="subtitle lead">Навчальний посібник з курсу <strong>Програмування на <code>C#</code></strong> для студентів спеціальності 121 Комп’ютерні науки та 051 Економічна кібернетика, 1-3 курс</p>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Програмування на C#</span></h1>
 </div>
 
 
@@ -239,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Опубліковано</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">28/12/2024</p>
+      <p class="date">4/12/26</p>
     </div>
   </div>
   
@@ -250,80 +213,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>C#, .NET, ООП, програмування, розробка програмного забезпечення, visual studio</p>
+    <p>Програмування на C#</p>
   </div>
 </div>
 
 </header>
 
 
-<p><img src="img/cover.png" title="Програмування на C#" class="quarto-cover-image img-fluid"></p>
-<div style="float:left">
-<p><a href="https://doi.org/10.5281/zenodo.7251419"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7251419.svg" class="img-fluid"></a></p>
-</div>
-<p><br></p>
-<section id="про-посібник" class="level1 unnumbered">
-<h1 class="unnumbered">Про посібник</h1>
-<p>Матеріали навчального посібника підготовлені для читання курсів <strong><em>“Основи програмування на C#”</em></strong>, <strong><em>“Програмування на C#”</em></strong> та <strong><em>“Обєктно-орінтоване програмування”</em></strong> студентам спеціальностей комп’ютерні науки та економічна кібернетика <a href="https://oa.edu.ua">Національного університету “Острозька академія”</a>.</p>
-<p><br></p>
-</section>
-<section id="передмова" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Передмова</h1>
-<p>Матеріли створені з метою компактного та зрозумілого викладення матеріалу з основ програмування на мові C#. Завдання та приклади орієнтовані на студентів, що мають середній рівень математичної підготовки і вміють розв’язувати задачі з алгебри, геометрії, логіки, а також курсів, що повязані із основами математичного моделювання (статистика, економетрика, економічна кібернетика, дослідження операцій тощо).</p>
-<p>Викладений матеріал не претендує на повноту у описі можливостей мови програмування C#, проте, на думку автора, може стати базою для написання нескладних програм або фундаментом для подальшого поглиблення знань та умінь.</p>
-<p>Зауваження, побажання та відгуки прошу надсилати на елетронну адресу yura@kleban.page. Також додаткові матеріали та приклади програм, що використовуються у посібнику можна завантажити на сайті автора: http://kleban.page.</p>
-<hr>
-</section>
-<section id="опис-навчальної-дисципліни" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Опис навчальної дисципліни</h1>
-<p>Навчальна дисципліна спрямована на практичне застосування популярної концепції об’єктно-орієнтованого програмування і мови програмування C#. У процесі вивчення курсу «Програмування на C#» студенти ознайомлюються із базовими поняттями алгоритмізації, структурами даних та основами об’єктно-орієнтовного програмування.</p>
-<p>Місце навчальної дисципліни у підготовці здобувачів: програмні результати дисципліни використовуються під час вивчення таких навчальних дисциплін: «Розробка ігрових додатків», «Об’єктно-орієнтоване програмування», «Технології колективної роботи над проектом». Закріплення на практиці здобутих програмних результатів відбувається під час проходження Навчальної практики з дисципліни «Програмування на C#».</p>
-<hr>
-</section>
-<section id="мета-та-завдання-навчальної-дисципліни" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Мета та завдання навчальної дисципліни</h1>
-<p><strong>Мета навчальної дисципліни</strong> – формування у студентів теоретичних знань та практичних навичок використання алгоритмічного та об’єктно-орієнтованого програмування при розв’язанні задач на базі технології .NET та мови програмування C#.</p>
-<p>Завдання навчальної дисципліни - розвинути та набути у здобувачів освіти такі компетентності:</p>
-<p><strong><em>загальні:</em></strong> - ЗК1 - здатність до абстрактного мислення, аналізу та синтезу, а саме виокремлення важливих властивостей об’єктів та їх опис засобами мови програмування; - ЗК2 - здатність застосувати знання у практичних ситуаціях, а саме використання навичок програмування для розв’язування обчислювальних задач, а також збору, зберігання, передачі інформації; - ЗК6 - здатність вчитися і оволодівати сучасними знаннями, а саме вміння самостійно опрацьовувати документацію з описом бібліотек, спеціальних програмних пакетів для подальшого застосування у розробці програм; - ЗК8 - здатність генерувати нові ідеї (креативність), а саме знаходити та покращувати існуючі підходи до розв’язання класичних та нових задач, що виникають під час написання програмного забезпечення; - ЗК9 - здатність працювати в команді, а саме спільна робота над проектами з використанням системи контролю версій git та інструментальних засобів управління проектною діяльністю (дошки, списки задач, bugtracker-и). спеціальні: - СК10 - здатність застосовувати методології, технології та інструментальні засоби для управління процесами життєвого циклу інформаційних і програмних систем, продуктів і сервісів інформаційних технологій відповідно до вимог замовника, а саме визначати вимоги до програмного забезпечення та способи імплементації потрібних рішень у вигляді готових рішень; - СК14 - здатність застосовувати методи та засоби забезпечення інформаційної безпеки, розробляти й експлуатувати спеціальне програмне забезпечення захисту інформаційних ресурсів об’єктів критичної інформаційної інфраструктури, а саме шифрування та кодування інформації, а також безпечна передача даних у мережі; - СК18 - здатність використовувати технології та патерни програмування для вирішення найбільш розповсюджених прикладних задач, модифікувати існуючі патерни для вирішення конкретної задачі при створенні програмної системи, а саме під час використання технологій WPF, ASP.NET, Blazor, Xamarin.</p>
-<p><strong><em>спеціальні:</em></strong> - СК10 - здатність застосовувати методології, технології та інструментальні засоби для управління процесами життєвого циклу інформаційних і програмних систем, продуктів і сервісів інформаційних технологій відповідно до вимог замовника, а саме визначати вимоги до програмного забезпечення та способи імплементації потрібних рішень у вигляді готових рішень; - СК14 - здатність застосовувати методи та засоби забезпечення інформаційної безпеки, розробляти й експлуатувати спеціальне програмне забезпечення захисту інформаційних ресурсів об’єктів критичної інформаційної інфраструктури, а саме шифрування та кодування інформації, а також безпечна передача даних у мережі; - СК18 - здатність використовувати технології та патерни програмування для вирішення найбільш розповсюджених прикладних задач, модифікувати існуючі патерни для вирішення конкретної задачі при створенні програмної системи, а саме під час використання технологій WPF, ASP.NET, Blazor, Xamarin.</p>
-<hr>
-</section>
-<section id="дотримання-принципів-доброчесності" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Дотримання принципів доброчесності</h1>
-<p>Викладач та слухач цього курсу, як очікується, повинні дотримуватися Кодексу академічної доброчесності університету:</p>
-<ul>
-<li><p>будь-яка робота, подана здобувачем протягом курсу, має бути його власною роботою здобувача; не вдаватися до кроків, що можуть нечесно покращити Ваші результати чи погіршити/покращити результати інших здобувачів;</p></li>
-<li><p>якщо буде виявлено ознаки плагіату або іншої недобросовісної академічної поведінки, то студент буде позбавлений можливості отримати передбачені бали за завдання;</p></li>
-<li><p>не публікувати у відкритому доступі відповіді на запитання, що використовуються в рамках курсу для оцінювання знань здобувачів;</p></li>
-<li><p>під час фінальних видів контролю необхідно працювати самостійно; не дозволяється говорити або обговорювати, а також не можна копіювати документи, використовувати електронні засоби отримання інформації.</p></li>
-</ul>
-<p>Порушення академічної доброчесності під час виконання контрольних завдань призведе до втрати балів або вживання заходів, які передбачені Кодексу академічної доброчесності НаУОА.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
+<section id="загальні-категорії-та-поняття-програмування" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Загальні категорії та поняття програмування</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Матеріали курсу створені з використанням ряду технологій та середовищ розробки:</p>
-<ul>
-<li><p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Мова <code>C#</code></a> - це об’єктно-орієнтована мова програмування, розроблена компанією Microsoft у 2000 році як частина платформи .NET.</p></li>
-<li><p><a href="https://quarto.org"><code>Quarto</code> Book</a> - система для публікації наукових та технічних текстів з відкритим кодом (<code>R</code>/<code>Python</code>/<code>Julia</code>/<code>Observable</code>).</p></li>
-<li><p><a href="https://git-scm.com/"><code>Git</code></a>/<a href="https://github.com/"><code>Github</code></a> - система контролю версій та, відповідно, сервіс для організації зберігання коду, а також публікації статичних сторінок.</p></li>
-<li><p><a href="https://www.rstudio.com/"><code>RStudio Desktop</code></a> - інтегроване середовище розробки (<code>IDE</code>) для мови <code>R</code> з відкритим кодом, що містить в собі редактор коду, консоль, планер, засоби візуалізації та можливості.</p></li>
-<li><p><a href="https://code.visualstudio.com/"><code>Visual Studio Code</code></a> - інтегроване середовище розробки (<code>IDE</code>) з відкритим кодом практично для усіх відомих технологій та мов програмування.</p></li>
-</ul>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Презентація до заняття:</p>
 </div>
-<p>Бібілографічний опис <code>bibtex</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bibtex number-lines code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1"></a><span class="va">@book</span>{<span class="ot">yk</span>-<span class="ot">csharp</span>,</span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="dt">author</span>       = {Юрій Клебан},</span>
-<span id="cb1-3"><a href="#cb1-3"></a>  <span class="dt">title</span>        = {Програмування на C#},</span>
-<span id="cb1-4"><a href="#cb1-4"></a>  <span class="dt">publisher</span>    = {Zenodo},</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="dt">year</span>         = 2025,</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">doi</span>          = {10.5281/zenodo.7251419},</span>
-<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">url</span>          = {https://doi.org/10.5281/zenodo.7251419}</span>
-<span id="cb1-8"><a href="#cb1-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<iframe src="https://1drv.ms/p/c/0a1340ba71b3f0aa/IQSq8LNxukATIIAKhBEAAAAAAchpo89BCfNqnG5fWpmVLOw?em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=0" width="100%" height="288px" frameborder="0">
+This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
+</iframe>
+<p>Перед початком вивчення програмування варто розглянути та розібрати базові поняття та категорії. Дамо визначення понять: алгоритм, задача, програмування, мова програмування, програма, програмне забезпечення, розробка програмного забезпечення.</p>
+<p><strong>Програмування</strong> – розробка програм за допомогою мов програмування.</p>
+<p><strong>Мова програмування</strong> – це формальна система знаків, що призначена для написання програм, зрозуміла для виконавця (комп’ютера).</p>
+<p><strong>Програма</strong> (<code>program</code>, <code>routine</code>) — впорядкована послідовність команд (інструкцій) комп’ютера для розв’язання задачі.</p>
+<p><strong>Програмне забезпечення</strong> (<code>software</code>) — сукупність програм обробки даних та необхідних для їх експлуатації документів. Програми призначені для машинної реалізації завдань (Задач). Терміни завдання і застосування (програма) мають дуже широке вживання в контексті інформатики і програмного забезпечення.</p>
+<p><strong>Завдання</strong> або <strong>задача</strong> (<code>problem</code>, <code>task</code>) — проблема, що підлягає вирішенню.</p>
+<p><strong>Застосування</strong> або <strong>програма</strong> (<code>application</code>) — програмна реалізація на комп’ютері рішення задачі.</p>
+<p><strong>Розробка програмного забезпечення</strong> (англ. <code>software engineering</code>, <code>software development</code>) — це рід діяльності (професія) і процес, спрямований на створення і підтримку працездатності, якості та надійності програмного забезпечення, використовуючи технології, методологію та практики з інформатики, управління проектами, математики, інженерії та інших сфер знань.</p>
+<p><strong>Алгоритм</strong> (<code>Algorithmi</code>, від імені перського математика IX ст. аль-Хорезмі) — система правил виконання обчислювального процесу, що обов’язково приводить до розв’язання певного класу задач після скінченного числа операцій. При написанні комп’ютерних програм алгоритм описує логічну послідовність операцій. Для візуального зображення алгоритмів часто використовують блок-схеми. Засоби швидкої розробки додатків (RAD) дозволяють створити програмний продукт, що складається з ряду застосувань, що дозволяють користувачам вводити дані в таблиці або редагувати вже існуючі дані, аналізувати введені дані і представляти їх у більш зручному для сприйняття вигляді - графіків, зведених таблиць або звітів (у тому числі у вигляді “паперових” документів).</p>
 
 
 </section>
@@ -748,10 +671,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Програмування на C#">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Програмування на C#</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./lecture-1-01-categories.html" class="pagination-link" aria-label="Програмування на C#">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Програмування на C#</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./lecture-1-02-history.html" class="pagination-link" aria-label="Програмування на C#">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Програмування на C#</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
