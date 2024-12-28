@@ -1,1 +1,1 @@
-Sitemap: https://csharp-book.kleban.page/sitemap.xml
+Sitemap: https://kleban.page/csharp-book/sitemap.xml
