@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.SHARK_FTP_USERNAME }}
           password: ${{ secrets.SHARK_FTP_PASSWORD }}
           local-dir: ./book/
-          server-dir: books/csharp/
+          server-dir: kleban/books/csharp/
           
