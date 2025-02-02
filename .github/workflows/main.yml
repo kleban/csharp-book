@@ -30,9 +30,8 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.SHARK_SERVER_FTP_SERVER }}
-          username: ${{ secrets.SHARK_FTP_USERNAME }}
+          server: ${{ secrets.SHARK_FTP_SERVER }}
+          username: ${{ secrets.SHARK_FTP_USER }}
           password: ${{ secrets.SHARK_FTP_PASSWORD }}
           local-dir: ./book/
-          server-dir: kleban/books/csharp/
           
