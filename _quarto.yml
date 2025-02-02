@@ -1,0 +1,52 @@
+project:
+  type: book
+  output-dir: book
+
+book:
+  title: "Програмування на C#"
+  subtitle: "Навчальний посібник з курсу **Програмування на `C#`** для студентів спеціальності 121 Комп'ютерні науки та 051 Економічна кібернетика, 1-3 курс"
+  author: "Юрій Клебан"
+  date: "28/12/2024"
+  google-analytics: ""
+  cover-image: img/cover.png
+  site-url: https://kleban.page/csharp-book/
+  repo-url: https://github.com/kleban/csharp-book/
+  repo-branch: main
+  sharing: [twitter, facebook, linkedin]
+  favicon: img/favicon.png
+  chapters:
+    - index.qmd
+    - part: "Тема 1. Вступ до курсу"
+      chapters:
+        - lecture-1-01-categories.qmd
+        - lecture-1-02-history.qmd
+        - lecture-1-03-csharp-evo.qmd
+        - lecture-1-04-dotnet.qmd
+    - part: "Тема 2. Основи написання коду та роботи з IDE"
+  page-navigation: true
+  page-footer: "Copyright 2025, Юрій Клебан" 
+
+language: _language-ua.yml 
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    cover-image: img/cover.png
+    code-link: true
+    css: css/style.css
+    number-sections: false
+    toc: true
+    highlight-style: github
+    code-line-numbers: true
+
+crossref:
+  tbl-title: 'Таблиця'
+  lst-title: 'Лістинг'
+  fig-title: 'Рис.'
+  fig-labels: arabic
+  title-delim: "."
+
+editor: visual
+

@@ -4,14 +4,35 @@ on: [push]
 jobs:
   build_and_deploy:
     name: Build package and deploy to SmarterASP.NET
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: build file
         uses: actions/checkout@v4
 
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.2' # Specify the R version you need
+
+      - name: Install dependencies
+        run: |
+          Rscript -e 'install.packages(c("rmarkdown", "knitr"))'
+      #    Rscript -e 'devtools::install_deps(dependencies = TRUE)'
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.SHARK_FTP_SERVER }}
-          username: ${{ secrets.SHARK_FTP_USER }}
+          server: ${{ secrets.SHARK_SERVER_FTP_SERVER }}
+          username: ${{ secrets.SHARK_FTP_USERNAME }}
           password: ${{ secrets.SHARK_FTP_PASSWORD }}
+          local-dir: ./book/
+          server-dir: books/csharp/
+          
