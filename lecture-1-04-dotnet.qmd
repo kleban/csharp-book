@@ -1,6 +1,6 @@
 ---
 title: "1.4	.NET Framework: поняття та структура"
-keywords: icrosoft .NET, CLR, FCL, MSIL, керований код, платформа, специфікація CLS, веб-додатки, JIT-компіляція, розподілені додатки, .NET Framework.
+keywords: Microsoft .NET, CLR, FCL, MSIL, керований код, платформа, специфікація CLS, веб-додатки, JIT-компіляція, розподілені додатки, .NET Framework.
 description: "Лекція описує основні компоненти платформи Microsoft .NET, таких як CLR (Common Language Runtime), FCL (.NET Framework Class Library), та MSIL (Microsoft Intermediate Language). Визначено роль платформи в забезпеченні виконання програмного коду та взаємодії з операційною системою. Розглянуто основи створення програм на платформі .NET, включаючи керований та некерований код, а також переваги використання бібліотеки класів для розробки різноманітних додатків: від графічних інтерфейсів до веб-сервісів та роботи з базами даних."
 author: "Юрій Клебан"
 date: "28/12/2024"
@@ -39,7 +39,10 @@ date-format: short
 
 Схема виконання .NET додатків у середовищі CLR:
 
-{{< figure src="/diagrams/csharp-books/lecture-1-dotnet-code-run.svg" title="1.2. Процес запуску .NET-програми" >}}
+![](diagrams/csharp-books/lecture-1-dotnet-code-run.svg)
+<::: {.class}
+1.2. Процес запуску .NET-програми"
+:::> 
 
 {{% callout note %}} Усі блок-схеми створено у *draw.io*.`<br>` Файли можна знайти [у github репозиторії курсу](https://github.com/kleban/csharp-book/blob/master/diagrams). {{% / callout %}}
 
