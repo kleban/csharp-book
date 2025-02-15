@@ -109,7 +109,7 @@ static void Main(string[] args)
 Для зображення алгоритмів використовуватимемо блок-схеми, що формуються з типових блоків:
 
 <p class="text-center">
-![](img/lecture2/lecture-2-algorithm-blocks-blocks.svg")
+![](img/lecture2/lecture-2-algorithm-blocks-blocks.svg)
 </p>
 <p class="text-center"><i>Рис. 2.2. Типові блоки для формування блок-схем алгоритмів."</i></p>
 
@@ -120,7 +120,7 @@ static void Main(string[] args)
 У теорії алгоритмів доведено, що будь-який, скільки завгодно складний алгоритм може бути складений з трьох основних алгоритмічних структур: лінійної, розгалуження і циклу, показаних, відповідно на `рис. 2.3`.
 
 <p class="text-center">
-![](img/lecture2/lecture-2-algorithm-blocks-structures.svg")
+![](img/lecture2/lecture-2-algorithm-blocks-structures.svg)
 </p>
 <p class="text-center"><i>Рис. 2.3. Основні алгоритмічні структури</i></p>
 
@@ -131,7 +131,7 @@ static void Main(string[] args)
 Структура "цикл" має декілька різновидів. На рис. 3 показаний цикл типу "доки" (`while`) з передумовою. Дії всередині цього циклу повторюються доки виконується умова у блоці розгалуження, причому спочатку перевіряється умова, а потім виконується дія. Досить часто використовуються інші типи циклу, показані на `рис. 2.4`.
 
 <p class="text-center">
-![](img/lecture2/lecture-2-algorithm-blocks-loops.svg")
+![](img/lecture2/lecture-2-algorithm-blocks-loops.svg)
 </p>
 <p class="text-center"><i>Рис. 2.4. Зображення циклів за допомогою блок-схем</i></p>
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 Тепер запишемо алгоритм розв’язання задачі 1 у графічному вигляді.
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task1.svg")
+![](img/lecture2/lecture-2-tasks-task1.svg)
 </p>
 <p class="text-center"><i>Рис. 2.5. Блок-схема алгоритму знаходження коренів квадратного рівняння до задачі №1</i></p>
 
@@ -153,7 +153,7 @@ static void Main(string[] args)
 {{< fa circle-check >}} **Розвязання задачі графічним способом:**
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task2.svg")
+![](img/lecture2/lecture-2-tasks-task2.svg)
 </p>
 <p class="text-center"><i>Рис. 2.6. Блок-схема алгоритму знаходження коренів квадратного рівняння до задачі №2</i></p>
 
@@ -164,7 +164,7 @@ static void Main(string[] args)
 {{< fa circle-check >}} **Розвязання задачі графічним способом:**
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task3.svg")
+![](img/lecture2/lecture-2-tasks-task3.svg)
 </p>
 <p class="text-center"><i>Рис. 2.7. Блок-схема алгоритму до задачі №3</i></p>
 
@@ -175,7 +175,7 @@ static void Main(string[] args)
 {{< fa circle-check >}} **Розвязання задачі графічним способом:**
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task4.svg")
+![](img/lecture2/lecture-2-tasks-task4.svg)
 </p>
 <p class="text-center"><i>Рис. 2.8. Блок-схема до задачі №4</i></p>
 
@@ -190,7 +190,7 @@ static void Main(string[] args)
 {{< fa circle-check >}} **Розвязання задачі графічним способом:**
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task5.svg")
+![](img/lecture2/lecture-2-tasks-task5.svg)
 </p>
 <p class="text-center"><i>Рис. 2.9. Блок-схема до задачі №5</i></p>
 
@@ -203,7 +203,7 @@ static void Main(string[] args)
 {{< fa circle-check >}} **Розвязання задачі графічним способом:**
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task6.svg")
+![](img/lecture2/lecture-2-tasks-task6.svg)
 </p>
 <p class="text-center"><i>Рис. 2.10. Блок-схема до задачі №6</i></p>
 
@@ -216,9 +216,168 @@ static void Main(string[] args)
 {{< fa circle-check >}} **Розвязання задачі графічним способом:**
 
 <p class="text-center">
-![](img/lecture2/lecture-2-tasks-task7.svg")
+![](img/lecture2/lecture-2-tasks-task7.svg)
 </p>
 <p class="text-center"><i>Рис. 2.11. Блок-схема до задачі №7</i></p>
 
 ---
 
+## 2.3. Ствоерення блок-схем з використанням Diagramm Designer {#chapter23}
+
+**Diagramm Designer** - програмне забезпечення для побудови блок-схем, UML-діаграм, та інших зображень на основі векторної графіки. [{{< fa download >}} Завантажити актуальну версію DiagramDesigner можна тут](https://logicnet.dk/DiagramDesigner/).
+
+Перелік базових функцій Diagramm Designer:
+
+-   Налаштовувана палітра шаблонів.
+-   Перевірка правопису.
+-   Імпорт / експорт зображень `WMF`, `EMF`, `BMP`, `JPEG`, `PNG`, `MNG`, `ICO`, `GIF` та `PCX`.
+-   Переглядач слайд-шоу.
+-   Зручний графічний редактор для відображення математичних виразів.
+-   Калькулятор для розв'язання рівнянь.
+-   Інтеграція з `MeeSoft Image Analyzer` для редагування растрових зображень.
+-   Мінімізація розміру файлів.
+
+Розглянемо графічний інтерфейс продукту:
+
+<p class="text-center">
+![](img/lecture2/diagramm_designer_1.png)
+</p>
+<p class="text-center"><i>Рис. 2.12. Головне вікно програми Diagramm Designer 1.23</i></p>
+
+Для створення діаграм використовуєть технологія `Drag&Drop`, тобто елементи можна перетягувати на робочу область. Приклад створення діаграми можна переглянути на відео (у онлайн версії лекції).
+
+Документ `DiagrammDesigner` може мати кілька сторінок, переключення між сторінками за допомогою меню `Diagram` - `Rearrange pages` (рис. 2.13).
+
+<p class="text-center">
+![](img/lecture2/diagramm_designer_2.png)
+</p>
+<p class="text-center"><i>Рис. 2.13. Вибір сторінки у програмі Diagramm Designer</i></p>
+
+Для форматування тексту у межах графічних блоків (фігур) використовують наступні теги:
+
+<p class="text-center">
+![](img/lecture2/diagramm_designer_3.png)
+</p>
+<p class="text-center"><i>Рис. 2.14. Редагування тексту у блоці Diagramm Designer</i></p>
+
+<center class="simple-table">
+
+*Таблиця 2.1. Теги для форматування тексту у графічних блоках DiagrammDesigner*
+
+| Код        | Стиль                     |
+|------------|---------------------------|
+| `\B…\b`    | Напівжирний               |
+| `\U…\u`    | Підкреслений              |
+| `\I…\i`    | Курсив                    |
+| `\O…\o`    | Закреслений               |
+| `\\`       | \\                        |
+| `\H…\h`    | Припіднятий до верху      |
+| `\S…\s`    | Символьний шрифт          |
+| `\p`       | Номер сторінки            |
+| `\L…\l`    | Опущений до низу          |
+| `\C######` | Колір у HTML              |
+| `\P`       | Загловок сторінки         |
+| `\c`       | Кількість сторінок        |
+| `\_`       | Горизонтальний розділювач |
+| `\n`       | Новий рядок               |
+| `\N`       | Підказка                  |
+
+*Таблиця 2.2. Приклади форматування тексту у графічних блоках DiagrammDesigner*
+
+| Код з тегами                 | Текст                                      |
+|--------------------------------------|----------------------------------|
+| `\B\ID=b\H2\h-4ac`           | $D=b^2-4ac$                           |
+| Вводимо значення `\Ba, b, c` | Вводимо значення $a$, $b$, $c$ |
+| `\ID > 0`                    | $D > 0$                               |
+| Вводимо `\B\Ix\Li\i`         | Вводимо $x_i$                          |
+
+</center>
+
+З іншими можливостями програмного подукту Diagramm Designer можна ознайомитися використовуючи вбудовану довідку програми.
+
+::: callout-warning
+ Підтримка даного розділу лекції у майбутньому не планується і його варто використовувати швидше для ознайомлення та розширення кругозору слухачів курсу. Рекомендую використовувати `draw.io`.
+:::
+
+---
+
+## 2.4. Створення блок-схем з використанням draw.io
+
+Варто звернути увагу, що усі діаграми для лекцій створені саме у `draw.io` і можете завантажити їх у [публічному репозиторії курсу на github](https://github.com/kleban/csharp-basics-public/blob/master/diagrams/).
+
+На даний момент проект є безкоштовним і розміщується за адресою <http://diagrams.net/>.
+
+Досить зручною функцією є інтеграція сервісами для зберігання файлів діаграм:
+
+-   {{< fa brands google >}} Google Drive.
+-   {{< fa cloud >}} OneDrive.
+-   {{< fa brands dropbox >}} Dropbox.
+-   {{< fa brands github >}} GitHub.
+-   {{< fa brands gitlab >}} GitLab.
+
+<p class="text-center">
+![](img/lecture2/draw_io_1.png)
+</p>
+<p class="text-center"><i>Рис. 2.15. Вибір джерела для збереження draw.io</i></p>
+
+Графічний інтерфейс `draw.io` є досить зручним у користуванні і дозволяє доповнити перелік доступних зображень, блоків, логотипів продуктів для створення схем будь-якого рівня складності.
+
+<p class="text-center">
+![](img/lecture2/draw_io_2.png)
+</p>
+<p class="text-center"><i>Рис. 2.16. UI головного вікна програми draw.io для Windows</i></p>
+
+Досить зручною є функція збереження діаграм для публікації у веб або на паперових носіях формати файлів (png, jpeg, svg, pdf, html, xml), а також вбудовування їх у різні типи документів, що надають сервіси `Google` та `Microsoft`.
+
+Для початку ознайомлення з сервісом `draw.io` рекомендую переглянути коротке відео:
+
+{{< video https://www.youtube.com/watch?v=Z0D96ZikMkc >}}
+
+*Джерело: [youtube канал draw.io](https://www.youtube.com/channel/UCiTtRN9b8P4CoSfpkfgEJHA)*
+
+---
+
+## Контрольні запитання 
+
+1. Що таке алгоритм і які його основні властивості?
+2. Назвіть способи запису алгоритмів.
+3. Які основні структури алгоритмів ви знаєте?
+4. Чим відрізняються цикли "while" та "for"?
+5. Як визначити дискретність алгоритму?
+6. Що таке вхідні та вихідні дані алгоритму?
+7. Які графічні елементи використовуються для побудови блок-схем?
+8. Як перевірити ефективність алгоритму?
+9. Які програми можна використовувати для створення блок-схем?
+10. Як визначити скінченність алгоритму?
+
+---
+
+## Задачі
+
+**Задача 1: Перевірка числа на парність.** Побудувати блок-схему алгоритму, який визначає, чи є введене число парним або непарним.
+
+**Задача 2: Знаходження найменшого елемента в масиві**. Створити блок-схему алгоритму для пошуку найменшого елемента в масиві з N елементів.
+
+**Задача 3: Обчислення факторіалу**. Розробити блок-схему алгоритму обчислення факторіалу введеного натурального числа.
+
+**Задача 4: Перевірка простого числа**. Побудувати блок-схему алгоритму для визначення, чи є введене число простим.
+
+**Задача 5: Конвертація температури**. Створити блок-схему алгоритму перетворення температури з градусів Цельсія в градуси Фаренгейта.
+
+---
+
+## Список використаних джерел 
+
+1. Ada Lovelace on Wikipedia. Url: https://en.wikipedia.org/wiki/Ada_Lovelace
+2. DiagramDesigner. Url: https://logicnet.dk/DiagramDesigner/
+3. Draw.IO. Url: https://www.diagrams.net/
+4. Albahari, J., & Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.
+5. Cardelli, L., & Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf
+6. Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.
+7. MSDN. (без дати). Отримано з Microsoft Developer Network: http://msdn.microsoft.com/
+
+---
+
+::: callout-warning
+Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту. Дякую.
+:::
