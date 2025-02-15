@@ -16,13 +16,10 @@ book:
   favicon: img/favicon.png
   chapters:
     - index.qmd
-    - part: "Тема 1. Вступ до курсу"
+    - part: "Частина 1. Основи алгоритмізації та програмування"
       chapters:
-        - lecture-1-01-categories.qmd
-        - lecture-1-02-history.qmd
-        - lecture-1-03-csharp-evo.qmd
-        - lecture-1-04-dotnet.qmd
-    - part: "Тема 2. Основи написання коду та роботи з IDE"
+        - lecture-1.qmd
+    - part: "Частина 2. Основи ООП"
   page-navigation: true
   page-footer: "Copyright 2025, Юрій Клебан" 
 
