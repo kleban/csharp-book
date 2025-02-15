@@ -19,7 +19,9 @@ book:
     - part: "Частина 1. Основи алгоритмізації та програмування"
       chapters:
         - lecture-1.qmd
+        - lecture-2.qmd
     - part: "Частина 2. Основи ООП"
+    - part: "Частина 3. Робота з даними"
   page-navigation: true
   page-footer: "Copyright 2025, Юрій Клебан" 
 
