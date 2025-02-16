@@ -24,6 +24,9 @@ book:
         - lecture-3.qmd
     - part: "Частина 2. Основи ООП"
     - part: "Частина 3. Робота з даними"
+    - part: "Частина Х. Додаткові теми"
+      chapters:
+        - lecture-x1.qmd
   page-navigation: true
   page-footer: "Copyright 2025, Юрій Клебан" 
 
