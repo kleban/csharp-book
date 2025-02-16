@@ -20,6 +20,7 @@ book:
       chapters:
         - lecture-1.qmd
         - lecture-2.qmd
+        - lecture-24.qmd
         - lecture-3.qmd
     - part: "Частина 2. Основи ООП"
     - part: "Частина 3. Робота з даними"
