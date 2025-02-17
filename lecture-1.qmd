@@ -179,11 +179,10 @@ graph TD;
 **`MSIL` (`Microsoft Intermediate Language`)** — проміжна мова платформи `Microsoft .NET`. Вихідні тексти програм для `.NET`-додатків пишуться на мовах програмування, відповідних специфікації `CLS`. Для таких мов може бути побудований перетворювач в `MSIL`. Таким чином, програми на цих мовах можуть транслюватися в проміжний код на `MSIL`. Завдяки відповідності `CLS`, в результаті трансляції програмного коду, написаного на різних мовах, виходить сумісний `IL`-код.
 
 Схема виконання .NET додатків у середовищі CLR:
-<p>
-![](img/lecture1/lecture-1-dotnet-code-run.svg)
-</p>
 
----
+<p>![](img/lecture1/lecture-1-dotnet-code-run.svg)</p>
+
+------------------------------------------------------------------------
 
 1.2. Процес запуску .NET-програми
 
@@ -200,34 +199,34 @@ graph TD;
 3.  Організація взаємодії процесів.
 4.  Вирішення проблем безпеки (в рамках безпеки, що існує в системі політики).
 
----
+------------------------------------------------------------------------
 
 ## Контрольні запитання
 
-1. Дайте визначення поняття "програмування" та назвіть основні парадигми програмування.
-2. Розкажіть про еволюцію мов програмування від процедурного до об'єктно-орієнтованого підходу. Які ключові зміни відбулися?
-3. Як виникла мова C++? Хто її розробив і які були основні цілі створення?
-4. Поясніть причини появи мови Java та її принципові відмінності від попередніх мов програмування.
-5. Розкрийте поняття ".NET Framework". Які основні компоненти входять до його складу?
-6. Що таке CLR (Common Language Runtime)? Які основні функції він виконує?
-7. Порівняйте між собою мови C, C++, Java та C#. Які спільні риси та відмінності мають ці мови?
-8. Поясніть принцип роботи проміжної мови MSIL в .NET Framework.
-9. Що таке керований код? Як він пов'язаний з CLR?
+1.  Дайте визначення поняття "програмування" та назвіть основні парадигми програмування.
+2.  Розкажіть про еволюцію мов програмування від процедурного до об'єктно-орієнтованого підходу. Які ключові зміни відбулися?
+3.  Як виникла мова C++? Хто її розробив і які були основні цілі створення?
+4.  Поясніть причини появи мови Java та її принципові відмінності від попередніх мов програмування.
+5.  Розкрийте поняття ".NET Framework". Які основні компоненти входять до його складу?
+6.  Що таке CLR (Common Language Runtime)? Які основні функції він виконує?
+7.  Порівняйте між собою мови C, C++, Java та C#. Які спільні риси та відмінності мають ці мови?
+8.  Поясніть принцип роботи проміжної мови MSIL в .NET Framework.
+9.  Що таке керований код? Як він пов'язаний з CLR?
 10. Розкрийте поняття об'єктно-орієнтованого програмування. Які його основні принципи та переваги?
 
----
+------------------------------------------------------------------------
 
-## Список використаних джерел 
+## Список використаних джерел
 
-1. Ada Lovelace on Wikipedia. Url: https://en.wikipedia.org/wiki/Ada_Lovelace
-2. DiagramDesigner. Url: https://logicnet.dk/DiagramDesigner/
-3. Draw.IO. Url: https://www.diagrams.net/
-4. Albahari, J., & Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.
-5. Cardelli, L., & Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf
-6. Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.
-7. MSDN. (без дати). Отримано з Microsoft Developer Network: http://msdn.microsoft.com/
+1.  Ada Lovelace on Wikipedia. Url: https://en.wikipedia.org/wiki/Ada_Lovelace
+2.  DiagramDesigner. Url: https://logicnet.dk/DiagramDesigner/
+3.  Draw.IO. Url: https://www.diagrams.net/
+4.  Albahari, J., & Albahari, B. (2012). C# 5.0 in a Nutshell, Fifth Edition. 1005 Gravenstein Highway North, Sebastopol, USA: O’Reilly Media, Inc.
+5.  Cardelli, L., & Wegner, P. (December 1985 p.). On Understanding Types, Data Abstraction, and Polymorphism. ACM Computing 1. Surveys, 17(4), сс. 149-154. Отримано з http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf
+6.  Kort, W. d. (2013). Exam Ref 70-483: Programming in C#. Sebastopol, California 95472: O’Reilly Media, Inc.
+7.  MSDN. (без дати). Отримано з Microsoft Developer Network: http://msdn.microsoft.com/
 
----
+------------------------------------------------------------------------
 
 ::: callout-warning
 Дорогі друзі, якщо Ви помітили, що для написання матеріалів використані джерела, які я не вказав - прошу надіслати мені інформацію на пошту. Дякую.
