@@ -27,6 +27,7 @@ book:
     - part: "Частина 4. Веб-розробка з ASP.NET MVC"
       chapters:
         - lecture-asp-net-mvc-to-do.qmd
+        - lecture-expense-manager-asp-net.qmd
     - part: "Частина Х. Додаткові теми"
       chapters:
         - lecture-x1.qmd

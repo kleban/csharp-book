@@ -1,0 +1,218 @@
+---
+title: Тема 4.2. Інструкція з розробки Expense Manager на ASP.NET MVC
+keywords: ASP.NET MVC, Entity Framework Core, SQL Server, SQLite, Bootstrap, FontAwesome, управління витратами, веб-додаток
+description: "Покрокова інструкція з розробки веб-додатку Expense Manager на ASP.NET MVC з використанням Entity Framework Core та Bootstrap."
+author: "Юрій Клебан"
+date: "01/02/2025"
+date-format: short
+---
+
+::: callout-warning
+Покрокова інструкція з розробки веб-додатку Expense Manager на ASP.NET MVC з використанням Entity Framework Core та Bootstrap.
+:::
+
+## Огляд проєкту
+Expense Manager - це веб-додаток для управління витратами, побудований на ASP.NET MVC з використанням Entity Framework Core та однієї з баз даних (наприклад, SQL Server або SQLite). Додаток дозволяє зберігати витрати за категоріями, додавати, редагувати та видаляти витрати та категорії.
+
+## Технології
+- **ASP.NET Core MVC**
+- **Entity Framework Core**
+- **SQL Server або SQLite**
+- **Bootstrap** для стилізації
+- **FontAwesome** для іконок
+
+## Налаштування середовища розробки
+1. Встановіть **.NET SDK** (не менше .NET 6.0)
+2. Встановіть **Visual Studio** (з ASP.NET та EF Core)
+3. Налаштуйте **SQL Server** або **SQLite**
+
+## Створення проєкту
+```sh
+mkdir ExpenseManager
+cd ExpenseManager
+dotnet new mvc
+```
+
+## Налаштування Entity Framework Core
+Додайте пакети EF Core для роботи з базою даних:
+```sh
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
+або для SQLite:
+```sh
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+```
+
+### Налаштування контексту бази даних
+Створіть файл `Models/ExpenseContext.cs`:
+```csharp
+using Microsoft.EntityFrameworkCore;
+
+public class ExpenseContext : DbContext
+{
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Expense> Expenses { get; set; }
+
+    public ExpenseContext(DbContextOptions<ExpenseContext> options) : base(options) { }
+}
+```
+
+### Налаштування моделей
+Файл `Models/Category.cs`:
+```csharp
+public class Category
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public List<Expense> Expenses { get; set; }
+}
+```
+
+Файл `Models/Expense.cs`:
+```csharp
+public class Expense
+{
+    public int Id { get; set; }
+    public string Description { get; set; }
+    public decimal Amount { get; set; }
+    public int CategoryId { get; set; }
+    public Category Category { get; set; }
+}
+```
+
+### Додавання налаштувань бази у `Program.cs`
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ExpenseContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+var app = builder.Build();
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Expense}/{action=Index}/{id?}");
+});
+app.Run();
+```
+
+### Налаштування `appsettings.json`
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ExpenseDB;Trusted_Connection=True;"
+  }
+}
+```
+
+## Створення контролерів
+
+### Контролер для категорій (`Controllers/CategoryController.cs`)
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+public class CategoryController : Controller
+{
+    private readonly ExpenseContext _context;
+    
+    public CategoryController(ExpenseContext context)
+    {
+        _context = context;
+    }
+    
+    public async Task<IActionResult> Index()
+    {
+        return View(await _context.Categories.ToListAsync());
+    }
+    
+    public IActionResult Create() => View();
+    
+    [HttpPost]
+    public async Task<IActionResult> Create(Category category)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Add(category);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        return View(category);
+    }
+}
+```
+
+### Контролер для витрат (`Controllers/ExpenseController.cs`)
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+public class ExpenseController : Controller
+{
+    private readonly ExpenseContext _context;
+    
+    public ExpenseController(ExpenseContext context)
+    {
+        _context = context;
+    }
+    
+    public async Task<IActionResult> Index()
+    {
+        return View(await _context.Expenses.Include(e => e.Category).ToListAsync());
+    }
+    
+    public IActionResult Create()
+    {
+        ViewBag.Categories = _context.Categories.ToList();
+        return View();
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Create(Expense expense)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Add(expense);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        ViewBag.Categories = _context.Categories.ToList();
+        return View(expense);
+    }
+}
+```
+
+## Додавання Bootstrap та FontAwesome
+
+У цьому проєкті рекомендується використовувати **Bootstrap** та **FontAwesome** для стилізації інтерфейсу та додавання іконок. Офіційні сайти цих технологій:
+- [Bootstrap](https://getbootstrap.com/)
+- [FontAwesome](https://fontawesome.com/)
+
+Додайте в `Views/Shared/_Layout.cshtml`:
+Додайте в `Views/Shared/_Layout.cshtml`:
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+```
+
+## Запуск міграцій та старт програми
+```sh
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+dotnet run
+```
+
+## Спільна розробка
+Для командної роботи використовуйте **Git**:
+```sh
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <repo_url>
+git push -u origin main
+```
+
+## Висновок
+Ця інструкція допоможе вам створити простий Expense Manager на ASP.NET MVC без використання репозиторіїв, але з використанням EF Core. Додаток підтримує збереження витрат за категоріями та стилізований за допомогою Bootstrap та FontAwesome.
+
