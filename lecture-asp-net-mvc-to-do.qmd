@@ -13,23 +13,23 @@ date-format: short
 
 Перед початком роботи необхідно встановити:
 
-- **.NET SDK** ([https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download))
-- **Visual Studio** ([https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/))
-- **SQL Server** (опціонально, можна використовувати SQLite або In-Memory БД)
+-   **.NET SDK** (<https://dotnet.microsoft.com/download>)
+-   **Visual Studio** (<https://visualstudio.microsoft.com/>)
+-   **SQL Server** (опціонально, можна використовувати SQLite або In-Memory БД)
 
 ## 1️⃣ Створення ASP.NET MVC проєкту
 
-1. Відкрийте **Visual Studio**.
-2. Створіть новий проєкт **ASP.NET Core Web App (Model-View-Controller)**.
-3. Оберіть **.NET 6+** або **.NET 5** як платформу.
-4. Назвіть проєкт, наприклад, `TodoMvcApp`.
-5. Натисніть **Create**.
+1.  Відкрийте **Visual Studio**.
+2.  Створіть новий проєкт **ASP.NET Core Web App (Model-View-Controller)**.
+3.  Оберіть **.NET 6+** або **.NET 5** як платформу.
+4.  Назвіть проєкт, наприклад, `TodoMvcApp`.
+5.  Натисніть **Create**.
 
 ## 2️⃣ Налаштування моделей (Model)
 
 Файл: `Models/TodoItem.cs`
 
-```csharp
+``` csharp
 using System.ComponentModel.DataAnnotations;
 
 namespace TodoMvcApp.Models
@@ -50,7 +50,7 @@ namespace TodoMvcApp.Models
 
 Файл: `Data/AppDbContext.cs`
 
-```csharp
+``` csharp
 using Microsoft.EntityFrameworkCore;
 using TodoMvcApp.Models;
 
@@ -67,7 +67,7 @@ namespace TodoMvcApp.Data
 
 Додайте в `appsettings.json` підключення до SQLite:
 
-```json
+``` json
 "ConnectionStrings": {
   "DefaultConnection": "Data Source=todo.db"
 }
@@ -75,7 +75,7 @@ namespace TodoMvcApp.Data
 
 Налаштуйте DI у `Program.cs`:
 
-```csharp
+``` csharp
 using Microsoft.EntityFrameworkCore;
 using TodoMvcApp.Data;
 
@@ -98,7 +98,7 @@ app.Run();
 
 Файл: `Controllers/TodoController.cs`
 
-```csharp
+``` csharp
 using Microsoft.AspNetCore.Mvc;
 using TodoMvcApp.Data;
 using TodoMvcApp.Models;
@@ -162,7 +162,7 @@ namespace TodoMvcApp.Controllers
 
 Файл: `Views/Todo/Index.cshtml`
 
-```html
+``` html
 @model IEnumerable<TodoMvcApp.Models.TodoItem>
 
 <h2>To-Do List</h2>
@@ -204,17 +204,29 @@ namespace TodoMvcApp.Controllers
 
 Виконайте у **Терміналі**:
 
-```sh
+``` sh
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
 ## 7️⃣ Запуск проєкту
 
-```sh
+``` sh
 dotnet run
 ```
 
 Відкрийте `http://localhost:5000/Todo` у браузері.
 
 Готово! 🎉 Ви розробили To-Do List на основі **ASP.NET MVC**.
+
+---
+
+# Використані джерела
+
+- [x] Helland, A., Durano, V. M., Chilberto, J. A., & Price, E. (2020). ASP.NET Core 5 for Beginners: Kick-start your ASP.NET web development journey with the help of step-by-step tutorials and examples. Packt Publishing.
+
+- [x] OpenAI
+
+---
+
+&copy 2025 Юрій Клебан + Open AI
