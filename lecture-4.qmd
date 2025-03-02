@@ -215,18 +215,18 @@ public enum Character
 Розглянемо відмінності між типами-посиланнями та типами
 значеннями (Albahari & Albahari, 2012). _Примітка. Детальніша інформація про значимі та посилальні типи даних подана у [питанні 4.6]_
 <center>
-
 _Таблиця 4.2. Порівняння типів-значень та типів-посилань у C#_
 </center>
-<div class="simple-table">
-<table style="width:100%">
-  
-  <tr><td>1</td><th style="width:50%"><center>Тип-значення</center></th>
-  <th style="width:50%"><center>Тип-посилання</center></th></tr>
-  <tr><td>2</td>
-    <td>
-<div>
 
+<table class="table table-bordered" style="width:100%">
+  <tr>
+    <td>1</td>
+    <th style="width:50%"><center>Тип-значення</center></th>
+    <th style="width:50%"><center>Тип-посилання</center></th>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>
 ```csharp
 public struct Point
 {
@@ -234,11 +234,8 @@ public struct Point
     public int Y { get;set; }
 }
 ```
-
-</div>
-    </td>
-    <td><div>
-
+</td>
+<td>
 ```csharp
 public class Point
 {
@@ -246,15 +243,11 @@ public class Point
     public int Y { get;set; }
 }
 ```
-
-</div>
-    </td>
+</td>
   </tr>
-  <tr>
+<tr>
   <td>3</td>
-  <td colspan=2>
-  <div>
-
+  <td colspan="2">
 ```csharp
 var p1 = new Point { X = 5, Y = 7 };
 var p2 = p1;
@@ -262,67 +255,53 @@ p2.X = 10;
 Console.WriteLine("p1: X = {0}", p1.X);
 Console.WriteLine("p2: X = {0}", p2.X);
 ```
-
 </td>
-  </tr>
-  <tr><td>4</td>
-    <td><div>
-
+</tr>
+<tr><td>4</td>
+<td>
 ```csharp
 p1: X = 5
 p2: X = 10
 ```
-
-</div>
-    </td>
-        <td><div>
-
+</td>
+<td>
 ```csharp
 p1: X = 10
 p2: X = 10
 ```
-
-</div>
 </td>
-  </tr>
-  <tr>
-  <td>5</td>
-  <td>
+</tr>
+<tr>
+<td>5</td>
+<td>
 
-```mermaid
+```{mermaid}
 graph TD;
   p1-->X1[X=5];
   p1-->Y1[Y=7];
   p2-->X2[X=10];
   p2-->Y2[Y=7];
 ```
-
 </td>
+<td>
 
-  <td>
-
-
-```mermaid
+```{mermaid}
 graph TD;
   p1-->REF[object_ref];
   p2-->REF[object_ref];
   REF-->X3[X=10];
   REF-->Y3[Y=7];
 ```
-
 </td>
-  </tr>
+</tr>
 </table>
-</div>
-
-
 
 Як видно із табл. 3.2 тип-значення створює копію елемента у
 пам’яті і працює з копією, не впливаючи на початкові дані. Тип-посилання вказує на ділянку пам’яті і під час зміни значення поля впливає на усі об’єкти, що «прив’язані» до цієї змінної.
 
 ---
 
-## 4.2. Оголошення та ініціалізація змінних. Константи {#chapter42}
+## 4.2. Оголошення та ініціалізація змінних. Константи
 
 Змінна у програмуванні є по суті назвою, що вказує на деякий
 об’єкт у пам’яті. Також можна сказати, що змінна вказує на адресу у
@@ -850,7 +829,7 @@ public static void Main()
     Console.WriteLine("int - {0}\n short - {1}", i,s);
 }
 ```
-{{< icon name="play text-muted" pack="fas" >}} Результат виконання:
+{{< fa play >}}  Результат виконання:
 
 ```output
   int - 1234567
@@ -954,7 +933,8 @@ point2.x = 777; point2.y = 777
 Тепер давайте замінимо структуру `Point` на клас.
 
 Приклад 12. Використання класу (посилальний тип).
-{{< icon name="code text-muted" pack="fas" >}} _Лістинг 3.13. Використання класу (посилальний тип)_
+
+{{< fa code >}} _Лістинг 3.13. Використання класу (посилальний тип)_
 ```csharp
 class Point
 {

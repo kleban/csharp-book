@@ -19,7 +19,7 @@ date-format: short
 
 <p class="text-center">
 
-![](img\lecture2\334px-Ada_Lovelace_portrait.jpg)
+![](img/lecture2/334px-Ada_Lovelace_portrait.jpg)
 
 </p>
 
@@ -248,7 +248,7 @@ static void Main(string[] args)
 
 <p class="text-center">
 
-![](img/lecture2/lecture-2-tasks-task5.svg)
+![](/img/lecture2/lecture-2-tasks-task5.svg)
 
 </p>
 
