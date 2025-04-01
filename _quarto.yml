@@ -27,6 +27,8 @@ book:
         - lecture-6.qmd
         - lecture-7.qmd
     - part: "Частина 2. Основи ООП"
+     # chapters:
+     #   - lecture-8.qmd
     - part: "Частина 3. Робота з даними"
     - part: "Частина 4. Веб-розробка з ASP.NET MVC"
       chapters:
