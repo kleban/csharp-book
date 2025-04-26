@@ -1,0 +1,143 @@
+---
+title: Тема 9. Робота з тестом у C# 
+keywords: C#, текст, string, StringBuilder, регулярні вирази, LINQ, обробка тексту, форматування, заміна, пошук, робота з рядками, маніпуляції з текстом, C# string methods.
+description: "У цьому проєкті розглядається робота з текстом у мові програмування C#. Показано основні операції з рядками: конкатенація, пошук, заміна, розділення, перетворення регістру, обробка форматування, а також використання класів String, StringBuilder, регулярних виразів і LINQ до текстових даних."
+author: "Юрій Клебан"
+date: "02/02/2025"
+date-format: short
+---
+
+
+# Вступ
+
+Робота з текстовими даними є невід’ємною частиною програмування. У C# для цього використовується низка вбудованих класів та методів, які дозволяють ефективно обробляти, аналізувати та змінювати рядки.
+
+---
+
+# Основи роботи з рядками
+
+У C# рядки представляються типом `string`, який є незмінним (immutable).
+
+```csharp
+string message = "Привіт, світе!";
+Console.WriteLine(message);
+```
+
+## Конкатенація рядків
+
+```csharp
+string name = "Олексій";
+string greeting = "Привіт, " + name + "!";
+Console.WriteLine(greeting);
+```
+
+Також можна використовувати інтерполяцію:
+
+```csharp
+string greeting = $"Привіт, {name}!";
+```
+
+---
+
+# Методи класу `string`
+
+Найпоширеніші методи:
+
+- `Length` — довжина рядка.
+- `ToUpper()`, `ToLower()` — перетворення регістру.
+- `Substring()` — витяг частини рядка.
+- `Replace()` — заміна символів.
+- `IndexOf()` — пошук позиції підрядка.
+- `Split()` — розбиття рядка.
+
+```csharp
+string text = "C# — сучасна мова програмування.";
+Console.WriteLine(text.ToUpper());
+Console.WriteLine(text.Substring(0, 2));
+Console.WriteLine(text.Replace("сучасна", "потужна"));
+```
+
+---
+
+# StringBuilder — для ефективної обробки
+
+Тип `StringBuilder` з простору імен `System.Text` використовується, коли потрібно багаторазово змінювати рядок.
+
+```csharp
+using System.Text;
+
+StringBuilder sb = new StringBuilder("Привіт");
+sb.Append(", світе!");
+Console.WriteLine(sb.ToString());
+```
+
+---
+
+# Регулярні вирази
+
+Для пошуку за шаблоном використовують `Regex`:
+
+```csharp
+using System.Text.RegularExpressions;
+
+string input = "Email: example@mail.com";
+string pattern = @"\w+@\w+\.\w+";
+Match match = Regex.Match(input, pattern);
+
+if (match.Success)
+{
+    Console.WriteLine($"Знайдено email: {match.Value}");
+}
+```
+
+---
+
+# LINQ до текстових даних
+
+Можна обробляти колекції рядків:
+
+```csharp
+string[] words = { "яблуко", "банан", "абрикос" };
+var filtered = words.Where(w => w.StartsWith("а"));
+
+foreach (var word in filtered)
+{
+    Console.WriteLine(word);
+}
+```
+
+---
+
+# Форматування рядків
+
+Форматування чисел, дат та інших даних:
+
+```csharp
+double price = 1234.567;
+Console.WriteLine($"Ціна: {price:F2} грн");
+
+DateTime now = DateTime.Now;
+Console.WriteLine($"Дата: {now:dd.MM.yyyy}");
+```
+
+---
+
+# Висновки
+
+У C# є широкі можливості для роботи з текстом:
+- Незмінні рядки — тип `string`
+- Гнучка обробка — методи `string`, `Regex`, `StringBuilder`
+- Підтримка LINQ — для обробки колекцій тексту
+
+Це дозволяє ефективно працювати з текстовими даними в реальних застосунках.
+
+---
+
+# Завдання для самостійної роботи
+
+1. Напишіть програму, яка визначає кількість слів у введеному реченні.
+2. Створіть шаблон перевірки номера телефону за допомогою регулярного виразу.
+3. Напишіть метод, який перетворює масив слів у речення.
+
+---
+```
